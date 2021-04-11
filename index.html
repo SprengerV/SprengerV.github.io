@@ -18,113 +18,250 @@
     <link rel='stylesheet' href='css/custom.css' />
   </head>
   <body>
-    <!-- Background wrapper -->
-    <div id='background' class='bg-cover'>
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-          <!-- Navbar brand -->
-          <a class="navbar-brand"><span id='s'>Sprenger</span><span id='v'>V</span></a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand"><span id='s'>Sprenger</span><span id='v'>V</span></a>
 
-          <!-- Toggle button -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
 
-          <!-- Collapsible wrapper -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Left links -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="donate.html">Donate</a>
-              </li>
-              <!-- Navbar dropdown -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-mdb-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <!-- Dropdown menu -->
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-                  >Disabled</a
-                >
-              </li>
-            </ul>
-            <!-- Left links -->
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left links -->
+          <ul class="navbar-nav ms-auto me-0 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donate.html">Donate</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
 
-            <!-- Search form -->
-            <form class="d-flex input-group w-auto">
-              <input
-                type="search"
-                class="form-control"
-                placeholder="Type query"
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-outline-primary"
-                type="button"
-                data-mdb-ripple-color="dark"
-              >
-                Search
-              </button>
-            </form>
+    <!-- Content -->
+    <main class='container-fluid'>
+      <div class='row'>
+        <!-- Intro -->
+        <div class='card col-10 col-lg-8 ms-auto me-auto'>
+          <div class='card-header d-flex justify-content-between fs-2 fw-bold'>
+            <div>Brendan Francis</div>
+            <div>Full Stack Developer</div>
           </div>
-          <!-- Collapsible wrapper -->
+          <div class='card-body'>
+            <p>Hello, my name is Brendan and I am a full stack developer in training. My first experience with computer programming came when I learned the basics of HTML and built my first (very basic) webpage in an after school program at the Boys and Girls Club. In junior high school, I began to dabble with learning Python. I'm currently enrolled in the Coding Bootcamp at UNH, and intend on making a career out of programming. Below you can find examples of my work, links to my GitHub and LinkedIn, and a downloadable link to my resume.</p>
+          </div>
         </div>
-        <!-- Container wrapper -->
-      </nav>
-      <!-- Navbar -->
+        <!-- /intro -->
+      </div>
+      <div class='row'>
+        <div id='carousel' class='col-8 ms-auto me-auto'>
+          <!-- Carousel wrapper -->
+          <div
+          id="carouselDarkVariant"
+          class="carousel slide carousel-slide carousel-dark"
+          data-mdb-ride="carousel"
+          >
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="0" class="active"></li>
+            <li data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="1"></li>
+            <li data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="2"></li>
+          </ol>
 
-      <!-- Content -->
-      <main class='container-fluid'>
-        <div class='row'>
+          <!-- Inner -->
+          <div class="carousel-inner">
+            <!-- Single item -->
+            <div class="carousel-item active">
+                <img
+                  src="/img/weatherdashboard.jpg"
+                  class="d-block w-100"
+                  alt="Weather Dashboard"
+                />
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5>Weather Dashboard</h5>
+                  <a href='https://sprengerv.github.io/weather_dashboard' target='_blank'>Deployment </a>
+                  <a href='https://github.com/SprengerV/weather_dashboard' target='_blank'> Repository</a>
+                </div>
+            </div>
 
+            <!-- Single item -->
+            <div class="carousel-item">  
+                <img
+                  src="/img/codequiz.jpg"
+                  class="d-block w-100"
+                  alt="Coding Quiz"
+                />
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5>Password Generator</h5>
+                  <a href='https://sprengerv.github.io/code_quiz' target='_blank'>Deployment </a>
+                  <a href='https://github.com/SprengerV/code_quiz' target='_blank'> Repository</a>
+                </div>
+            </div>
+
+          </div>
+          <!-- Inner -->
+
+          <!-- Controls -->
+          <a
+            class="carousel-control-prev"
+            href="#carouselDarkVariant"
+            role="button"
+            data-mdb-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselDarkVariant"
+            role="button"
+            data-mdb-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+          </div>
+          <!-- Carousel wrapper -->
         </div>
-      </main>
-      <!-- Content -->
-      
-      <!-- Footer -->
-      <footer class="bg-dark text-center text-lg-start w-100 position-absolute bottom-0">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-          © 2020 Copyright:
-          <a class="text-light" href="http://sprengerv.com/">SprengerV.com</a>
+      </div>
+      <div class='row'>
+        <!-- Links -->
+        <div class='card col-4 ms-auto me-2'>
+          <div class='card-header fs-2 fw-bold text-center'>
+            Links
+          </div>
+          <div class='card-body'>
+            <!-- GitHub -->
+            <div class='row d-flex justify-content-around align-items-center'>
+              <div class='col-12 col-sm-6 d-flex justify-content-md-center'>
+                GitHub:
+              </div>
+              <div class='col-12 col-sm-6 d-flex justify-content-end justify-content-md-center'>
+                <a href="https://github.com/SprengerV" target="_blank">
+                  <img src='./img/GitHub-Mark-120px-plus.png' height='70px'>
+                </a>
+              </div>
+            </div>
+            <!-- /github -->
+            <div class='row'>
+              <div class='col-10 ms-auto me-auto'>
+                <hr>
+              </div>
+            </div>
+            <!-- LinkedIn -->
+            <div class='row d-flex justify-content-around align-items-center'>
+              <div class='col-12 col-sm-6 d-flex justify-content-md-center'>
+                LinkedIn:
+              </div>
+              <div class='col-12 col-sm-6 d-flex justify-content-end justify-content-md-center'>
+                <a href="https://www.linkedin.com/in/brendan-francis-520b921ba/" target="_blank">
+                  <img src='./img/LI-In-Bug.png' height='70px'>
+                </a>
+              </div>
+            </div>
+            <!-- /linkedin -->
+            <div class='row'>
+              <div class='col-10 ms-auto me-auto'>
+                <hr>
+              </div>
+            </div>
+            <!-- Resume -->
+            <div class='row d-flex justify-content-around align-items-center'>
+              <div class='col-12 col-sm-6 d-flex justify-content-md-center'>
+                Resume:
+              </div>
+              <div class='col-12 col-sm-6 d-flex justify-content-end justify-content-md-center'>
+                <a href='/doc/BFrancisResume.pdf' >
+                  <i class="far fa-file fa-4x"></i>
+                </a>
+              </div>
+            </div>
+            <!-- /resume -->
+          </div>
         </div>
-        <!-- Copyright -->
-      </footer>
-    </div>
-  </body>
-
+        <!-- /links -->
+        <!-- Education -->
+        <div class='card col-6 ms-2 me-auto'>
+          <div class='card-header fs-2 fw-bold text-center'>
+            Education
+          </div>
+          <div class='card-body'>
+            <div class='row'>
+              <div class='col-6'>
+                Manchester High School Central
+              </div>
+              <div class='col-6 d-flex justify-content-end fst-italic'>
+                Class of 2010
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-10 ms-auto me-auto'>
+                <hr/>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-6'>
+                Arizona State University
+              </div>
+              <div class='col-6 d-flex justify-content-end fst-italic'>
+                Mechanical Engineering (1 yr.)
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-10 ms-auto me-auto'>
+                <hr/>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-6'>
+                Coding Bootcamp at UNH
+              </div>
+              <div class='col-6 d-flex justify-content-end fst-italic'>
+                Currently attending
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /education -->
+      </div>
+    </main>
+    <!-- Content -->
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-lg-start w-100 position-bottom">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-light" href="http://sprengerv.com/">SprengerV.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
   <script type="text/javascript" src='js/myjava.js'></script>
+
+  </body>
+
+  
 </html>
